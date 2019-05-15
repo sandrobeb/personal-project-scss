@@ -1,3 +1,21 @@
 .header {
-    background: green;
+    justify-content: start;
+    height: 108px;
+    .logo {
+        padding: 0 0 0 25px;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        &::before {
+            content: url(../../../images/header/burger.png);
+            width: 56px;
+            height: 39px;
+            position: absolute;
+            right: 25px;
+        }
+        a {
+        display: none;
+        }
+    }
 }
