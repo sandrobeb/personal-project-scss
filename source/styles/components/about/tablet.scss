@@ -1,0 +1,80 @@
+
+.aboutus {
+    width: 90%;
+
+    .title {
+        padding-bottom: 40px;
+    }
+
+    .about {
+        flex-direction: column;
+
+        img {
+            width: 80%;
+            margin: 0 auto 50px auto;
+        }
+
+        .text {
+
+            h3 {
+                padding-bottom: 25px;
+                border-bottom: 1px solid $color-8;
+            }
+
+            p {
+                max-width: none;
+            }
+
+            .features {
+                flex-direction: column;
+
+                .feat {
+
+                    .feature {
+
+                        &:first-of-type {
+                            margin-bottom: 10px;
+                        }
+
+                        div {
+                            max-width: none;
+
+                            h4 {
+                                display: none;
+                            }
+                        }
+
+                        &::before {
+                            content: url(/images/about/check.png);
+                        }
+                    }
+
+                    &.row1 {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+
+                    &.row2 {
+                        margin-right: 0;
+
+                        .feature:last-of-type {
+                            display: none;
+                        }
+                    }
+                }
+
+                button {
+                    display: block;
+                    width: 144px;
+                    height: 44px;
+                    border: 1px solid $color-2;
+                    background-color: $color-5;
+                    color: $color-2;
+                    font-size: 13px;
+                    font-weight: 900;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+}

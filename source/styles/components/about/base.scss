@@ -1,6 +1,8 @@
 $color-4: #323232;
 $color-5: #3AB6B2;
 $color-6: #6A6A6A;
+$color-7: #D3D3D3;
+$color-8: #E6E6E6;
 
 .wrapaboutus {
     display: flex;
@@ -14,10 +16,26 @@ $color-6: #6A6A6A;
 
     .title {
         padding-bottom: 95px;
-        font-family: 'Raleway Semibold', sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-size: 31px;
+        font-weight: 600;
         line-height: 34px;
         text-align: center;
+
+        .speak {
+
+            &::before,
+            &::after {
+                content: '';
+                display: inline-block;
+                position: relative;
+                width: 37px;
+                border-top-width: 1px;
+                border-top-style: solid;
+                color: $color-7;
+                vertical-align: middle;
+            }
+        }
 
         p {
             color: $color-4;
@@ -41,8 +59,9 @@ $color-6: #6A6A6A;
             h3 {
                 margin-bottom: 25px;
                 color: $color-4;
-                font-family: 'Raleway Semibold', sans-serif;
+                font-family: 'Raleway', sans-serif;
                 font-size: 31px;
+                font-weight: 600;
             }
 
             p {
@@ -53,59 +72,79 @@ $color-6: #6A6A6A;
             }
 
             .features {
-                      padding-top:50px;
+                display: flex;
+                padding-top: 50px;
 
                 .feat {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
 
-                    &.line1 {
+                    .feature {
+                        display: flex;
 
-                        .feature:first-of-type {
-
-                            div {
-
-                                &::before {
-                                    content: url(../../../images/about/1.png)
-                                }
-                            }
+                        &:first-of-type {
+                            margin-bottom: 55px;
                         }
 
-                        .feature:last-of-type {
+                        div {
+                            max-width: 172px;
+                            margin-left: 27px;
 
-                            div {
+                            h4 {
+                                margin-bottom: 14px;
+                                font-family: 'Raleway', sans-serif;
+                                font-size: 18px;
+                                line-height: 19px;
+                            }
 
-                                &::before {
-                                    content: url(../../../images/about/2.png)
-                                }
+                            p {
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 13px;
+                                line-height: 22px;
                             }
                         }
                     }
 
-                    &.line2 {
+                    &.row1 {
+                        margin-right: 45px;
 
                         .feature:first-of-type {
 
-                            div {
-
-                                &::before {
-                                    content: url(../../../images/about/3.png)
-                                }
+                            &::before {
+                                content: url(/images/about/1.png);
                             }
                         }
 
                         .feature:last-of-type {
 
-                            div {
+                            &::before {
+                                content: url(/images/about/2.png);
+                            }
+                        }
+                    }
 
-                                &::before {
-                                    content: url(../../../images/about/4.png)
-                                }
+                    &.row2 {
+
+                        .feature:first-of-type {
+
+                            &::before {
+                                content: url(/images/about/3.png);
+                            }
+                        }
+
+                        .feature:last-of-type {
+
+                            &::before {
+                                content: url(/images/about/4.png);
                             }
                         }
                     }
                 }
+
+                button {
+                    display: none;
+                }
             }
         }
     }
-  }
+}

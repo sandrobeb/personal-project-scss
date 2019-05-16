@@ -1,28 +1,34 @@
 .header {
-    height: 66px;
     justify-content: start;
+    height: 66px;
+
     .logo {
         padding: 0 0 0 20px;
+
         img {
             width: 20.6px;
             height: 31.01px;
         }
+
         &::after {
             font-size: 27.22px;
         }
     }
+
     .menu {
         display: flex;
         align-items: center;
+
         &::before {
             content: url(../../../images/header/burger.png);
-            width: 48px;
-            height: 31px;
             position: absolute;
             right: 20px;
+            width: 48px;
+            height: 31px;
         }
+
         a {
-        display: none;
+            display: none;
         }
     }
 }

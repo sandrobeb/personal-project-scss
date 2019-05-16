@@ -1,35 +1,42 @@
 .slider {
+
     .arrows {
         display: none;
     }
+
     .center {
+
         p {
-          &:first-of-type {
-          font-size: 25px;
-          line-height: 30px;
-          position: static;
+
+            &:first-of-type {
+                position: static;
+                font-size: 25px;
+                line-height: 30px;
+            }
+
+            &:last-of-type {
+                position: static;
+                font-size: 9px;
+                line-height: 10.8px;
+            }
         }
-          &:last-of-type {
-            font-size: 9px;
-            line-height: 10.8px;
-            position: static;
-          }
-        }
+
         span {
-          font-size: 30px;
-          line-height: 36px;
-          font-weight: 700;
-          position: static;
+            position: static;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
         }
-      button {
-        width: 144px;
-        height: 44px;
-        border: 1px solid $color-2;
-        outline: 3px solid $color-3;
-        font-size: 13px;
-        line-height: 34px;
-        font-weight: 900;
-        position: static;
-      }
+
+        button {
+            position: static;
+            width: 144px;
+            height: 44px;
+            border: 1px solid $color-2;
+            outline: 3px solid $color-3;
+            font-size: 13px;
+            font-weight: 900;
+            line-height: 34px;
+        }
     }
 }

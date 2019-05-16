@@ -1,31 +1,38 @@
 .slider {
+
     .arrows {
         display: none;
     }
+
     .center {
+
         p {
-          &:first-of-type {
-          font-size: 58.81px;
-          line-height: 70.57px;
+
+            &:first-of-type {
+                font-size: 58.81px;
+                line-height: 70.57px;
+            }
+
+            &:last-of-type {
+                font-size: 18.94px;
+                line-height: 22.73px;
+            }
         }
-          &:last-of-type {
-            font-size: 18.94px;
-            line-height: 22.73px;
-          }
-        }
+
         span {
-          font-size: 71.77px;
-          line-height: 86.12px;
-          font-weight: 700;
+            font-size: 71.77px;
+            font-weight: 700;
+            line-height: 86.12px;
         }
-      button {
-        width: 144px;
-        height: 44px;
-        border: 1px solid $color-2;
-        outline: 3px solid $color-3;
-        font-size: 13px;
-        line-height: 34px;
-        font-weight: 900;
-      }
+
+        button {
+            width: 144px;
+            height: 44px;
+            border: 1px solid $color-2;
+            outline: 3px solid $color-3;
+            font-size: 13px;
+            font-weight: 900;
+            line-height: 34px;
+        }
     }
 }
