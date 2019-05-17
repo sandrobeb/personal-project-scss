@@ -20,7 +20,7 @@
         align-items: center;
 
         &::before {
-            content: url(../../../images/header/burger.png);
+            content: url(/images/header/burger.png);
             position: absolute;
             right: 20px;
             width: 48px;
