@@ -31,6 +31,8 @@
                 .feat {
 
                     .feature {
+                        display: flex;
+                        align-items: center;
 
                         &:first-of-type {
                             margin-bottom: 10px;
@@ -38,14 +40,23 @@
 
                         div {
                             max-width: none;
+                            margin-left: 16px;
 
                             h4 {
                                 display: none;
                             }
+
+                            p {
+                                line-height: 23px;
+
+                                span {
+                                    display: block;
+                                }
+                            }
                         }
 
                         &::before {
-                            content: url(/images/about/check.png);
+                            content: url(/images/about/check.png) !important;
                         }
                     }
 
@@ -56,6 +67,7 @@
 
                     &.row2 {
                         margin-right: 0;
+                        margin-bottom: 30px;
 
                         .feature:last-of-type {
                             display: none;

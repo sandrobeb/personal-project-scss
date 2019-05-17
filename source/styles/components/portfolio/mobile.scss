@@ -1,0 +1,109 @@
+.portfolio {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0 0 0;
+
+    .title {
+        padding-bottom: 35px;
+        font-size: 27px;
+        line-height: 29.98px;
+    }
+
+    .porticon {
+
+        &::before,
+        &::after {  
+            width: 33px;
+        }
+    }
+
+    .content {
+        display: grid;
+        grid-gap: 7px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 163px);
+        width: 100%;
+
+        .p {
+
+            .top {
+                height: 70%;
+
+                .img {
+                    display: none;
+                }
+
+                .social {
+                    display: flex;
+
+                    .ic {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 46px;
+                        height: 46px;
+                        margin-right: 6px;
+                        background-image: url(/images/portfolio/eclipse.png);
+
+                        &:last-of-type {
+                            margin-right: 0;
+                        }
+
+                        &:hover {
+                            background-image: url(/images/portfolio/eclipsehov.png);
+                        }
+                    }
+
+
+                }
+            }
+
+            .footer {
+                display: none;
+                padding-top: 0;
+                text-align: center;
+
+                h4 {
+                    font-size: 13.99px;
+                    line-height: 26.52px;
+                }
+
+                p {
+                    font-size: 10.99px;
+                    line-height: 26.52px;
+                }
+            }
+
+            &.p1 {
+                grid-column: 1/2;
+                background-color: $color-1;
+            }
+
+            &.p2 {
+                grid-column: 1/2;
+                background-color: $color-1;
+            }
+
+            &.p3 {
+                grid-column: 1/2;
+                background-color: $color-1;
+            }
+
+            &.p4 {
+                display: none;
+            }
+
+            &.p5 {
+                display: none;
+            }
+
+            &.p6 {
+                display: none;
+            }
+
+            &.p7 {
+                display: none;
+            }
+        }
+    }
+}

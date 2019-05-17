@@ -1,0 +1,107 @@
+.portfolio {
+    width: 95%;
+    margin: auto;
+    padding: 80px 0;
+
+    .title {
+        padding-bottom: 57px;
+        font-size: 28.99px;
+        line-height: 32.36px;
+    }
+
+    .porticon {
+
+        &::before,
+        &::after {  
+            width: 35px;
+        }
+    }
+
+    .content {
+        display: grid;
+        grid-gap: 21px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 229px);
+        width: 100%;
+
+        .p {
+
+            .top {
+
+                .img {
+
+                    img {
+
+                        &:first-of-type {
+                            width: 18px;
+                            height: 10px;
+                        }
+
+                        &:last-of-type {
+                            width: 16px;
+                            height: 17px;
+                        }
+                    }
+
+                    &:first-of-type {
+                        margin-right: 8px;
+                    }
+                }
+
+                .social {
+                    display: none;
+                }
+            }
+
+            .footer {
+                display: none;
+                padding-top: 0;
+                text-align: center;
+
+                h4 {
+                    font-size: 11.99px;
+                    line-height: 21.68px;
+                }
+
+                p {
+                    font-size: 9.99px;
+                    line-height: 21.68px;
+                }
+            }
+
+            &.p1 {
+                grid-column: 1/2;
+                background-color: $color-1;
+            }
+
+            &.p2 {
+                grid-column: 2/3;
+                background-color: $color-1;
+            }
+
+            &.p3 {
+                grid-column: 3/4;
+                background-color: $color-1;
+            }
+
+            &.p4 {
+                grid-column: 1/2;
+                background-color: $color-1;
+            }
+
+            &.p5 {
+                grid-column: 2/3;
+                background-color: $color-1;
+            }
+
+            &.p6 {
+                grid-column: 3/4;
+                background-color: $color-1;
+            }
+
+            &.p7 {
+                display: none;
+            }
+        }
+    }
+}
