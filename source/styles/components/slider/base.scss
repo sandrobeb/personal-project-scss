@@ -4,15 +4,15 @@
     align-items: center;
     justify-content: center;
     height: 760px;
-    background-image: url(../../../images/slider/slider.png);
+    background-image: url(../../../images/slider/back.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     .arrows {
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 34.5%;
+        transform: translateY(100%);
 
         &.left {
             left: 39px;
@@ -62,8 +62,11 @@
     }
 
     button {
-        width: 144px;
-        height: 44px;
+        position: relative;
+        top: -15px;
+        left: 20px;
+        width: 140px;
+        height: 40px;
         border: 1px solid $color-2;
         outline: 3px solid $color-3;
         background-color: $color-3;

@@ -1,6 +1,9 @@
+.wrapaboutus {
+    padding: 72px 0 102px 0;
+}
 
 .aboutus {
-    width: 90%;
+    width: 98%;
 
     .title {
         padding-bottom: 40px;
@@ -11,18 +14,21 @@
 
         img {
             width: 80%;
-            margin: 0 auto 50px auto;
+            margin: 0 auto -15px auto;
         }
 
         .text {
 
             h3 {
-                padding-bottom: 25px;
+                padding-bottom: 14px;
                 border-bottom: 1px solid $color-8;
+                font-size: 24px;
             }
 
             p {
                 max-width: none;
+                font-size: 13px;
+                line-height: 24px;
             }
 
             .features {

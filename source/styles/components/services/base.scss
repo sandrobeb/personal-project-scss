@@ -2,20 +2,20 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 145px 0;
+    padding: 141px 0 150px 0;
     background-color: $color-9;
 }
 
 .services {
 
     .title {
-        padding-bottom: 95px;
+        padding: 0 0 134px 17px;
+        color: $color-2;
         font-family: 'Raleway', sans-serif;
         font-size: 31px;
         font-weight: 600;
         line-height: 34px;
         text-align: center;
-        color: $color-2;
     }
 
     .servicon {
@@ -75,7 +75,7 @@
                     font-family: 'Open Sans', sans-serif;
                     font-size: 14px;
                     font-weight: 400;
-                    letter-spacing: 0.22px;
+                    letter-spacing: .22px;
                     line-height: 22px;
                 }
             }

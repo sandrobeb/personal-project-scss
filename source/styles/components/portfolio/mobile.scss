@@ -1,7 +1,7 @@
 .portfolio {
     width: 90%;
     margin: auto;
-    padding: 40px 0 0 0;
+    padding: 38px 0 0 0;
 
     .title {
         padding-bottom: 35px;
@@ -12,7 +12,7 @@
     .porticon {
 
         &::before,
-        &::after {  
+        &::after {
             width: 33px;
         }
     }
@@ -53,8 +53,6 @@
                             background-image: url(/images/portfolio/eclipsehov.png);
                         }
                     }
-
-
                 }
             }
 
@@ -90,7 +88,8 @@
             }
 
             &.p4 {
-                display: none;
+                grid-column: 1/2;
+                background-color: $color-1;
             }
 
             &.p5 {

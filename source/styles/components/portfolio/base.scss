@@ -3,10 +3,10 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding: 120px 0;
+    padding: 107px 0 107px 0;
 
     .title {
-        padding-bottom: 95px;
+        padding: 0 0 77px 17px;
         color: $color-4;
         font-family: 'Raleway', sans-serif;
         font-size: 31px;
@@ -68,18 +68,6 @@
                 }
             }
 
-            &:hover {
-
-                .top {
-                    display: flex;
-                }
-
-                .footer {
-                    display: block;
-                }
-            }
-
-
             .footer {
                 display: none;
                 padding-top: 10px;
@@ -100,6 +88,17 @@
                     font-style: italic;
                     font-weight: 600;
                     line-height: 28.96px;
+                }
+            }
+
+            &:hover {
+
+                .top {
+                    display: flex;
+                }
+
+                .footer {
+                    display: block;
                 }
             }
 

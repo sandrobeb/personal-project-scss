@@ -1,6 +1,9 @@
+.wrapaboutus {
+    padding: 36px 0 17px 0;
+}
 
 .aboutus {
-    width: 90%;
+    width: 98%;
 
     .title {
         padding-bottom: 20px;
@@ -11,14 +14,15 @@
 
         img {
             width: 80%;
-            margin: 0 auto 25px auto;
+            margin: 0 auto 40px auto;
         }
 
         .text {
 
             h3 {
-                padding-bottom: 13px;
+                padding-bottom: 0;
                 border-bottom: 1px solid $color-8;
+                font-size: 16px;
             }
 
             p {
@@ -33,14 +37,14 @@
                     .feature {
 
                         &:first-of-type {
-                            margin-bottom: 20px;
+                            margin-bottom: 0;
                         }
 
                         div {
                             position: relative;
-                            top: -5px;      
+                            top: -5px;
                             max-width: none;
-                            margin-left: 8px;             
+                            margin-left: 8px;
 
                             h4 {
                                 display: none;
@@ -61,12 +65,12 @@
 
                     &.row1 {
                         margin-right: 0;
-                        margin-bottom: 20px;
+                        margin-bottom: 0;
                     }
 
                     &.row2 {
                         margin-right: 0;
-                        margin-bottom: 15px;
+                        margin-bottom: 0;
 
                         .feature:last-of-type {
                             display: none;
