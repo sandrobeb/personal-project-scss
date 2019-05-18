@@ -26,46 +26,52 @@
 
         .p {
 
-            .top {
+            .photo {
 
-                .img {
+                .hover {
 
-                    img {
+                    .top {
 
-                        &:first-of-type {
-                            width: 18px;
-                            height: 10px;
+                        .img {
+
+                            img {
+
+                                &:first-of-type {
+                                    width: 18px;
+                                    height: 10px;
+                                }
+
+                                &:last-of-type {
+                                    width: 16px;
+                                    height: 17px;
+                                }
+                            }
+
+                            &:first-of-type {
+                                margin-right: 8px;
+                            }
                         }
 
-                        &:last-of-type {
-                            width: 16px;
-                            height: 17px;
+                        .social {
+                            display: none;
                         }
                     }
 
-                    &:first-of-type {
-                        margin-right: 8px;
+                    .footer {
+                        display: none;
+                        padding-top: 0;
+                        text-align: center;
+
+                        h4 {
+                            font-size: 11.99px;
+                            line-height: 21.68px;
+                        }
+
+                        p {
+                            font-size: 9.99px;
+                            line-height: 21.68px;
+                        }
                     }
-                }
-
-                .social {
-                    display: none;
-                }
-            }
-
-            .footer {
-                display: none;
-                padding-top: 0;
-                text-align: center;
-
-                h4 {
-                    font-size: 11.99px;
-                    line-height: 21.68px;
-                }
-
-                p {
-                    font-size: 9.99px;
-                    line-height: 21.68px;
                 }
             }
 

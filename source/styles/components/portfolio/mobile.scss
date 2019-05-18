@@ -26,49 +26,56 @@
 
         .p {
 
-            .top {
-                height: 70%;
+            .photo {
 
-                .img {
-                    display: none;
-                }
+                .hover {
 
-                .social {
-                    display: flex;
+                    .top {
+                        height: 70%;
 
-                    .ic {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 46px;
-                        height: 46px;
-                        margin-right: 6px;
-                        background-image: url(/images/portfolio/eclipse.png);
-
-                        &:last-of-type {
-                            margin-right: 0;
+                        .img {
+                            display: none;
                         }
 
-                        &:hover {
-                            background-image: url(/images/portfolio/eclipsehov.png);
+                        .sociall {
+                            display: flex;
+
+                            .ic {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 46px;
+                                height: 46px;
+                                margin-right: 6px;
+                                background-image: url(/images/portfolio/eclipse.png);
+
+                                &:last-of-type {
+                                    margin-right: 0;
+                                }
+
+                                &:hover {
+                                    background-image: url(/images/portfolio/eclipsehov.png);
+                                }
+                            }
                         }
                     }
-                }
-            }
 
-            .footer {
-                display: none;
-                padding-top: 0;
-                text-align: center;
+                    .footer {
+                        display: none;
+                        height: 30%;
+                        padding-top: 0;
+                        text-align: center;
 
-                h4 {
-                    font-size: 13.99px;
-                    line-height: 26.52px;
-                }
+                        h4 {
+                            font-size: 13.99px;
+                            line-height: 26.52px;
+                        }
 
-                p {
-                    font-size: 10.99px;
-                    line-height: 26.52px;
+                        p {
+                            font-size: 10.99px;
+                            line-height: 26.52px;
+                        }
+                    }
                 }
             }
 
