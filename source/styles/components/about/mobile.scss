@@ -1,93 +1,110 @@
 .wrapaboutus {
     padding: 36px 0 17px 0;
-}
 
-.aboutus {
-    width: 98%;
+    .aboutus {
+        width: 98%;
 
-    .title {
-        padding-bottom: 20px;
-    }
-
-    .about {
-        flex-direction: column;
-
-        img {
-            width: 80%;
-            margin: 0 auto 40px auto;
+        .title {
+            padding-bottom: 20px;
         }
 
-        .text {
+        .about {
+            flex-direction: column;
 
-            h3 {
-                padding-bottom: 0;
-                border-bottom: 1px solid $color-8;
-                font-size: 16px;
+            img {
+                width: 80%;
+                margin: 0 auto 40px auto;
             }
 
-            p {
-                max-width: none;
-            }
+            .text {
 
-            .features {
-                flex-direction: column;
-
-                .feat {
-
-                    .feature {
-
-                        &:first-of-type {
-                            margin-bottom: 0;
-                        }
-
-                        div {
-                            position: relative;
-                            top: -5px;
-                            max-width: none;
-                            margin-left: 8px;
-
-                            h4 {
-                                display: none;
-                                font-size: 16px;
-                                line-height: 19px;
-                            }
-
-                            p {
-                                font-size: 13px;
-                                line-height: 23px;
-                            }
-                        }
-
-                        &::before {
-                            content: url(/images/about/check.png) !important;
-                        }
-                    }
-
-                    &.row1 {
-                        margin-right: 0;
-                        margin-bottom: 0;
-                    }
-
-                    &.row2 {
-                        margin-right: 0;
-                        margin-bottom: 0;
-
-                        .feature:last-of-type {
-                            display: none;
-                        }
-                    }
+                h3 {
+                    padding-bottom: 0;
+                    border-bottom: 1px solid $color-8;
+                    font-size: 16px;
                 }
 
-                button {
-                    display: block;
-                    width: 138px;
-                    height: 42px;
-                    border: 1px solid $color-2;
-                    background-color: $color-5;
-                    color: $color-2;
-                    font-size: 13px;
-                    font-weight: 900;
-                    line-height: 34px;
+                p {
+                    max-width: none;
+                }
+
+                .features {
+                    flex-direction: column;
+
+                    .feat {
+
+                        .feature {
+
+                            &:first-of-type {
+                                margin-bottom: 0;
+                            }
+
+                            div {
+                                position: relative;
+                                top: -5px;
+                                max-width: none;
+                                margin-left: 8px;
+
+                                h4 {
+                                    display: none;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                }
+
+                                p {
+                                    font-size: 13px;
+                                    line-height: 23px;
+                                }
+                            }
+                        }
+
+                        &.row1 {
+                            margin-right: 0;
+                            margin-bottom: 0;
+
+                            .feature:first-of-type {
+
+                                &::before {
+                                    content: url(/images/about/check.png);
+                                }
+                            }
+
+                            .feature:last-of-type {
+
+                                &::before {
+                                    content: url(/images/about/check.png);
+                                }
+                            }
+                        }
+
+                        &.row2 {
+                            margin-right: 0;
+                            margin-bottom: 0;
+
+                            .feature:first-of-type {
+
+                                &::before {
+                                    content: url(/images/about/check.png);
+                                }
+                            }
+
+                            .feature:last-of-type {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    button {
+                        display: block;
+                        width: 138px;
+                        height: 42px;
+                        border: 1px solid $color-2;
+                        background-color: $color-5;
+                        color: $color-2;
+                        font-size: 13px;
+                        font-weight: 900;
+                        line-height: 34px;
+                    }
                 }
             }
         }

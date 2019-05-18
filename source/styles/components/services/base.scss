@@ -4,79 +4,79 @@
     width: 100%;
     padding: 141px 0 150px 0;
     background-color: $color-9;
-}
 
-.services {
+    .services {
 
-    .title {
-        padding: 0 0 134px 17px;
-        color: $color-2;
-        font-family: 'Raleway', sans-serif;
-        font-size: 31px;
-        font-weight: 600;
-        line-height: 34px;
-        text-align: center;
-    }
-
-    .servicon {
-
-        &::before,
-        &::after {
-            content: '';
-            display: inline-block;
-            position: relative;
-            width: 37px;
-            border-top-width: 1px;
-            border-top-style: solid;
+        .title {
+            padding: 0 0 134px 17px;
             color: $color-2;
-            vertical-align: middle;
+            font-family: 'Raleway', sans-serif;
+            font-size: 31px;
+            font-weight: 600;
+            line-height: 34px;
+            text-align: center;
         }
-    }
 
-    .content {
-        display: flex;
-        justify-content: center;
+        .servicon {
 
-        .service {
-            padding-right: 145px;
-
-            &:last-of-type {
-                padding: 0;
+            &::before,
+            &::after {
+                content: '';
+                display: inline-block;
+                position: relative;
+                width: 37px;
+                border-top-width: 1px;
+                border-top-style: solid;
+                color: $color-2;
+                vertical-align: middle;
             }
+        }
 
-            .pol {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 125px;
-                height: 145px;
-                margin: 0 auto 40px auto;
-                background-image: url(/images/services/polygon.png);
+        .content {
+            display: flex;
+            justify-content: center;
 
-                &:hover {
-                    background-image: url(/images/services/polygonhov.png);
-                }
-            }
+            .service {
+                padding-right: 145px;
 
-            .text {
-                text-align: center;
-
-                h4 {
-                    color: $color-5;
-                    font-family: 'Raleway', sans-serif;
-                    font-size: 20px;
-                    font-weight: 700;
-                    line-height: 40px;
+                &:last-of-type {
+                    padding: 0;
                 }
 
-                p {
-                    max-width: 295px;
-                    color: $color-2;
-                    font-family: 'Open Sans', sans-serif;
-                    font-size: 14px;
-                    font-weight: 400;
-                    letter-spacing: .22px;
-                    line-height: 22px;
+                .pol {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 125px;
+                    height: 145px;
+                    margin: 0 auto 40px auto;
+                    background-image: url(/images/services/polygon.png);
+
+                    &:hover {
+                        background-image: url(/images/services/polygonhov.png);
+                    }
+                }
+
+                .text {
+                    text-align: center;
+
+                    h4 {
+                        color: $color-5;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 40px;
+                    }
+
+                    p {
+                        max-width: 295px;
+                        color: $color-2;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: .22px;
+                        line-height: 22px;
+                    }
                 }
             }
         }

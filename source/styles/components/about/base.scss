@@ -3,145 +3,145 @@
     justify-content: center;
     width: 100%;
     padding: 115px 0 128px 0;
-}
 
-.aboutus {
+    .aboutus {
 
-    .title {
-        padding: 0 23px 91px 42px;
-        font-family: 'Raleway', sans-serif;
-        font-size: 31px;
-        font-weight: 600;
-        line-height: 34px;
-        text-align: center;
+        .title {
+            padding: 0 23px 91px 42px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 31px;
+            font-weight: 600;
+            line-height: 34px;
+            text-align: center;
 
-        .speak {
+            .speak {
 
-            &::before,
-            &::after {
-                content: '';
-                display: inline-block;
-                position: relative;
-                width: 37px;
-                border-top-width: 1px;
-                border-top-style: solid;
-                color: $color-7;
-                vertical-align: middle;
-            }
-        }
-
-        p {
-            color: $color-4;
-
-            span {
-                color: $color-5;
-            }
-        }
-    }
-
-    .about {
-        display: flex;
-        flex-direction: row;
-        padding-left: 15px;
-
-        img {
-            margin-right: 90px;
-        }
-
-        .text {
-
-            h3 {
-                margin-bottom: 21px;
-                color: $color-4;
-                font-family: 'Raleway', sans-serif;
-                font-size: 31px;
-                font-weight: 600;
+                &::before,
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    position: relative;
+                    width: 37px;
+                    border-top-width: 1px;
+                    border-top-style: solid;
+                    color: $color-7;
+                    vertical-align: middle;
+                }
             }
 
             p {
-                max-width: 570px;
-                color: $color-6;
-                font-family: 'Open Sans', sans-serif;
-                font-size: 14px;
-                line-height: 26px;
+                color: $color-4;
+
+                span {
+                    color: $color-5;
+                }
+            }
+        }
+
+        .about {
+            display: flex;
+            flex-direction: row;
+            padding-left: 15px;
+
+            img {
+                margin-right: 90px;
             }
 
-            .features {
-                display: flex;
-                padding-top: 50px;
+            .text {
 
-                .feat {
+                h3 {
+                    margin-bottom: 21px;
+                    color: $color-4;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 31px;
+                    font-weight: 600;
+                }
+
+                p {
+                    max-width: 570px;
+                    color: $color-6;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+
+                .features {
                     display: flex;
-                    flex-direction: column;
+                    padding-top: 50px;
 
-                    .feature {
+                    .feat {
                         display: flex;
+                        flex-direction: column;
 
-                        &:first-of-type {
-                            margin-bottom: 55px;
-                        }
+                        .feature {
+                            display: flex;
 
-                        div {
-                            max-width: 172px;
-                            margin-left: 27px;
-
-                            h4 {
-                                margin-bottom: 14px;
-                                font-family: 'Raleway', sans-serif;
-                                font-size: 18px;
-                                line-height: 19px;
+                            &:first-of-type {
+                                margin-bottom: 55px;
                             }
 
-                            p {
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 13px;
-                                line-height: 22px;
+                            div {
+                                max-width: 172px;
+                                margin-left: 27px;
 
-                                span {
-                                    display: none;
+                                h4 {
+                                    margin-bottom: 14px;
+                                    font-family: 'Raleway', sans-serif;
+                                    font-size: 18px;
+                                    line-height: 19px;
+                                }
+
+                                p {
+                                    font-family: 'Open Sans', sans-serif;
+                                    font-size: 13px;
+                                    line-height: 22px;
+
+                                    span {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.row1 {
+                            margin-right: 45px;
+
+                            .feature:first-of-type {
+
+                                &::before {
+                                    content: url(/images/about/1.png);
+                                }
+                            }
+
+                            .feature:last-of-type {
+
+                                &::before {
+                                    content: url(/images/about/2.png);
+                                }
+                            }
+                        }
+
+                        &.row2 {
+
+                            .feature:first-of-type {
+
+                                &::before {
+                                    content: url(/images/about/3.png);
+                                }
+                            }
+
+                            .feature:last-of-type {
+
+                                &::before {
+                                    content: url(/images/about/4.png);
                                 }
                             }
                         }
                     }
 
-                    &.row1 {
-                        margin-right: 45px;
-
-                        .feature:first-of-type {
-
-                            &::before {
-                                content: url(/images/about/1.png);
-                            }
-                        }
-
-                        .feature:last-of-type {
-
-                            &::before {
-                                content: url(/images/about/2.png);
-                            }
-                        }
+                    button {
+                        display: none;
                     }
-
-                    &.row2 {
-
-                        .feature:first-of-type {
-
-                            &::before {
-                                content: url(/images/about/3.png);
-                            }
-                        }
-
-                        .feature:last-of-type {
-
-                            &::before {
-                                content: url(/images/about/4.png);
-                            }
-                        }
-                    }
-                }
-
-                button {
-                    display: none;
                 }
             }
         }

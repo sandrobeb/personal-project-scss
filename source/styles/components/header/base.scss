@@ -9,14 +9,13 @@
 
     .logo {
         padding: 2px 0 0 87.5px;
+        color: $color-2;
+        font-family: 'Raleway Light', sans-serif;
+        font-size: 36px;
+        text-decoration: none;
 
-        &::after {
-            content: 'ARRY';
-            position: relative;
-            left: -4.4px;
-            color: $color-2;
-            font-family: 'Raleway Light', sans-serif;
-            font-size: 36px;
+        &::before {
+            content: url(/images/header/logo.png);
         }
     }
 

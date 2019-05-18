@@ -1,40 +1,40 @@
 .wrapservices {
     padding: 37px 0 16px 0;
-}
 
-.services {
+    .services {
 
-    .title {
-        padding-bottom: 60px;
-        font-size: 27px;
-        line-height: 30.2px;
-    }
-
-    .servicon {
-
-        &::before,
-        &::after {
-            width: 34.94px;
+        .title {
+            padding-bottom: 60px;
+            font-size: 27px;
+            line-height: 30.2px;
         }
-    }
 
-    .content {
-        flex-direction: column;
+        .servicon {
 
-        .service {
-            padding: 0 0 45px 0;
+            &::before,
+            &::after {
+                width: 34.94px;
+            }
+        }
 
-            .text {
+        .content {
+            flex-direction: column;
 
-                h4 {
-                    font-size: 18.96px;
-                    line-height: 37.97px;
-                }
+            .service {
+                padding: 0 0 45px 0;
 
-                p {
-                    font-size: 12.98px;
-                    letter-spacing: .22px;
-                    line-height: 20.88px;
+                .text {
+
+                    h4 {
+                        font-size: 18.96px;
+                        line-height: 37.97px;
+                    }
+
+                    p {
+                        font-size: 12.98px;
+                        letter-spacing: .22px;
+                        line-height: 20.88px;
+                    }
                 }
             }
         }

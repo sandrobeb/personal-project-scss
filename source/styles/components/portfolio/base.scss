@@ -39,66 +39,96 @@
 
         .p {
 
-            .top {
-                display: none;
+            .photo {
+                display: flex;
+                position: relative;
                 align-items: center;
                 justify-content: center;
-                height: 80%;
-                background-color: $color-10;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
 
-                .img {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 46px;
-                    height: 46px;
-                    background-image: url(/images/portfolio/eclipse.png);
+                img {
+                    position: absolute;
+                    z-index: 1;
+                }
 
-                    &:first-of-type {
-                        margin-right: 11px;
+                .hover {
+                    z-index: 2;
+                    width: 100%;
+                    height: 100%;
+
+                    .top {
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                        height: 80%;
+                        background-color: $color-12;
+
+                        .img {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 46px;
+                            height: 46px;
+                            background-image: url(/images/portfolio/eclipse.png);
+
+                            &:first-of-type {
+                                margin-right: 11px;
+                            }
+
+                            &:hover {
+                                background-image: url(/images/portfolio/eclipsehov.png);
+                            }
+                        }
+
+                        .sociall {
+                            display: none;
+                        }
                     }
 
-                    &:hover {
-                        background-image: url(/images/portfolio/eclipsehov.png);
+                    .footer {
+                        display: none;
+                        z-index: 3;
+                        height: 20%;
+                        padding-top: 10px;
+                        background-color: $color-1;
+                        text-align: center;
+
+                        h4 {
+                            color: $color-2;
+                            font-family: 'Raleway', sans-serif;
+                            font-size: 17px;
+                            font-weight: 400;
+                            line-height: 28.96px;
+                        }
+
+                        p {
+                            color: $color-3;
+                            font-family: 'Raleway', sans-serif;
+                            font-size: 13px;
+                            font-style: italic;
+                            font-weight: 600;
+                            line-height: 28.96px;
+                        }
                     }
-                }
-
-                .social {
-                    display: none;
-                }
-            }
-
-            .footer {
-                display: none;
-                padding-top: 10px;
-                text-align: center;
-
-                h4 {
-                    color: $color-2;
-                    font-family: 'Raleway', sans-serif;
-                    font-size: 17px;
-                    font-weight: 400;
-                    line-height: 28.96px;
-                }
-
-                p {
-                    color: $color-3;
-                    font-family: 'Raleway', sans-serif;
-                    font-size: 13px;
-                    font-style: italic;
-                    font-weight: 600;
-                    line-height: 28.96px;
                 }
             }
 
             &:hover {
 
-                .top {
-                    display: flex;
-                }
+                .photo {
 
-                .footer {
-                    display: block;
+                    .hover {
+
+                        .top {
+                            display: flex;
+                        }
+
+                        .footer {
+                            display: block;
+                        }
+                    }
                 }
             }
 

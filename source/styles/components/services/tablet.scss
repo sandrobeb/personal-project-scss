@@ -1,28 +1,28 @@
 .wrapservices {
     padding: 73px 0 57px 0;
-}
 
-.services {
+    .services {
 
-    .title {
-        padding-bottom: 60px;
-        font-size: 28.99px;
-        line-height: 32.36px;
-    }
-
-    .servicon {
-
-        &::before,
-        &::after {
-            width: 34.94px;
+        .title {
+            padding-bottom: 60px;
+            font-size: 28.99px;
+            line-height: 32.36px;
         }
-    }
 
-    .content {
-        flex-direction: column;
+        .servicon {
 
-        .service {
-            padding: 0 0 80px 0;
+            &::before,
+            &::after {
+                width: 34.94px;
+            }
+        }
+
+        .content {
+            flex-direction: column;
+
+            .service {
+                padding: 0 0 80px 0;
+            }
         }
     }
 }

@@ -1,96 +1,113 @@
 .wrapaboutus {
     padding: 72px 0 102px 0;
-}
 
-.aboutus {
-    width: 98%;
+    .aboutus {
+        width: 98%;
 
-    .title {
-        padding-bottom: 40px;
-    }
-
-    .about {
-        flex-direction: column;
-
-        img {
-            width: 80%;
-            margin: 0 auto -15px auto;
+        .title {
+            padding-bottom: 40px;
         }
 
-        .text {
+        .about {
+            flex-direction: column;
 
-            h3 {
-                padding-bottom: 14px;
-                border-bottom: 1px solid $color-8;
-                font-size: 24px;
+            img {
+                width: 80%;
+                margin: 0 auto -15px auto;
             }
 
-            p {
-                max-width: none;
-                font-size: 13px;
-                line-height: 24px;
-            }
+            .text {
 
-            .features {
-                flex-direction: column;
+                h3 {
+                    padding-bottom: 14px;
+                    border-bottom: 1px solid $color-8;
+                    font-size: 24px;
+                }
 
-                .feat {
+                p {
+                    max-width: none;
+                    font-size: 13px;
+                    line-height: 24px;
+                }
 
-                    .feature {
-                        display: flex;
-                        align-items: center;
+                .features {
+                    flex-direction: column;
 
-                        &:first-of-type {
-                            margin-bottom: 10px;
-                        }
+                    .feat {
 
-                        div {
-                            max-width: none;
-                            margin-left: 16px;
+                        .feature {
+                            display: flex;
+                            align-items: center;
 
-                            h4 {
-                                display: none;
+                            &:first-of-type {
+                                margin-bottom: 10px;
                             }
 
-                            p {
-                                line-height: 23px;
+                            div {
+                                max-width: none;
+                                margin-left: 16px;
 
-                                span {
-                                    display: block;
+                                h4 {
+                                    display: none;
+                                }
+
+                                p {
+                                    line-height: 23px;
+
+                                    span {
+                                        display: block;
+                                    }
                                 }
                             }
                         }
 
-                        &::before {
-                            content: url(/images/about/check.png) !important;
+                        &.row1 {
+                            margin-right: 0;
+                            margin-bottom: 10px;
+
+                            .feature:first-of-type {
+
+                                &::before {
+                                    content: url(/images/about/check.png);
+                                }
+                            }
+
+                            .feature:last-of-type {
+
+                                &::before {
+                                    content: url(/images/about/check.png);
+                                }
+                            }
+                        }
+
+                        &.row2 {
+                            margin-right: 0;
+                            margin-bottom: 30px;
+
+                            .feature:first-of-type {
+
+                                &::before {
+                                    content: url(/images/about/check.png);
+                                }
+                            }
+
+                            .feature:last-of-type {
+                                display: none;
+                            }
                         }
                     }
 
-                    &.row1 {
-                        margin-right: 0;
-                        margin-bottom: 10px;
+                    button {
+                        display: block;
+                        width: 144px;
+                        height: 44px;
+                        border: 1px solid $color-2;
+                        background-color: $color-5;
+                        color: $color-2;
+                        font-size: 13px;
+                        font-weight: 900;
+                        line-height: 34px;
                     }
-
-                    &.row2 {
-                        margin-right: 0;
-                        margin-bottom: 30px;
-
-                        .feature:last-of-type {
-                            display: none;
-                        }
-                    }
-                }
-
-                button {
-                    display: block;
-                    width: 144px;
-                    height: 44px;
-                    border: 1px solid $color-2;
-                    background-color: $color-5;
-                    color: $color-2;
-                    font-size: 13px;
-                    font-weight: 900;
-                    line-height: 34px;
                 }
             }
         }
